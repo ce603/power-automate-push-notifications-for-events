@@ -23,7 +23,7 @@ To tag events for notifications, you’ll need a category named exactly:
 1. Go to [Outlook.com](https://outlook.com) and sign in.
 2. Click the **gear icon** in the top right → select **“View all Outlook settings”**.
 3. Navigate to:  
-   `Mail` → `Customize Actions` → `Categories`
+   `Account` → `Categories`
 4. Add a new category named **Push Notification** (choose any color you like).
 5. The name must match exactly: `Push Notification`
 
@@ -43,15 +43,10 @@ Make sure both connections are **authenticated and marked as connected**.
 ---
 
 ### 4. Configure the Flow
-1. Import or create the flow that uses the **"When an upcoming event is starting soon (V3)"** trigger.
-2. Set the `Look-Ahead Time` parameter to **10** (minutes).
-3. Add a **Condition** after the trigger (within a `For each` loop) with this expression:
-
-   contains(items('Apply_to_each')?['categories'], 'Push Notification')
-
-4. Under the **True** path, add the **Send me a mobile notification** action with your desired message.
-
-> ✅ Tip: You can customize the message with dynamic values like event subject, time, etc.
+1. Import or the flow
+2. Ensure the actions are using the appropriate connections you created earlier.
+3. Select the appropriate calendar you wish to receive notifications for under the Event Trigger.
+4. By default, you can change the look ahead time to a value greater than or equal to **5** (minutes). If you are a Power Automate Premium subscriber, you can set this to anything greater than or equal to 1 (minutes).
 
 ---
 
@@ -65,18 +60,12 @@ Make sure both connections are **authenticated and marked as connected**.
 
 ---
 
-## 💬 Notes
-
-- This flow relies on the **default calendar** associated with your Office 365 account.
-- Make sure your **calendar time zone** and **phone’s time zone** are in sync to avoid timing mismatches.
-- You can adjust the `Look-Ahead Time` if you prefer a different notification window.
-
----
-
 ## 🧪 Troubleshooting
 
 - **No notification?**
   - Ensure the category name is exactly `Push Notification`.
   - Verify your flow has run (check Run History).
   - Confirm that your phone has the Power Automate app installed, signed in, and with notifications enabled.
-  - Ensure the calendar event starts within the `Look-Ahead Time` and was created in your default calendar.
+  - Ensure that the lookahead time is at least 5 minutes (or 1 minute for Power Automate Premium Subscribers), and that your event starts at least 5 minutes in the future.
+
+ Import the **Mobile Push Notification** flow and use the connection you set up earlier to send a test push to your mobile device.
