@@ -1,7 +1,7 @@
 # 📲 Push Notification Reminder for Outlook 365 Calendar Events
 
 ## 📄 Description
-This Power Automate flow sends a **push notification to your mobile device approximately 10 minutes before any calendar event** that is categorized as `"Push Notification"`.
+This Power Automate flow sends a **push notification to your mobile device approximately 10 minutes before any calendar event** that is categorized as `Push Notification`.
 
 ---
 
