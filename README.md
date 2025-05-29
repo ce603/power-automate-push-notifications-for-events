@@ -43,10 +43,12 @@ Make sure both connections are **authenticated and marked as connected**.
 ---
 
 ### 4. Configure the Flow
-1. Import or the flow
-2. Ensure the actions are using the appropriate connections you created earlier.
-3. Select the appropriate calendar you wish to receive notifications for under the Event Trigger.
-4. By default, you can change the look ahead time to a value greater than or equal to **5** (minutes). If you are a Power Automate Premium subscriber, you can set this to anything greater than or equal to 1 (minutes).
+1. Import the flows
+   - [Push Notification Reminders for Outlook 365 Calendar Events](https://github.com/ce603/power-automate-push-notifications-for-events/blob/main/PushNotificationRemindersforOutlook365CalendarEvents_20250529193836.zip)
+   - [Mobile Push Notification (for testing)](https://github.com/ce603/power-automate-push-notifications-for-events/blob/main/MobilePushNotification_20250529193714.zip)
+3. Ensure the actions are using the appropriate connections you created earlier.
+4. Select the appropriate calendar you wish to receive notifications for under the Event Trigger.
+5. By default, you can change the look ahead time to a value greater than or equal to **5** (minutes). If you are a Power Automate Premium subscriber, you can set this to anything greater than or equal to 1 (minutes).
 
 ---
 
