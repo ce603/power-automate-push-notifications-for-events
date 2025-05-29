@@ -43,7 +43,7 @@ Make sure both connections are **authenticated and marked as connected**.
 ---
 
 ### 4. Configure the Flow
-1. Import the flows
+1. Download and import the flows:
    - [Push Notification Reminders for Outlook 365 Calendar Events](https://github.com/ce603/power-automate-push-notifications-for-events/blob/main/PushNotificationRemindersforOutlook365CalendarEvents_20250529193836.zip)
    - [Mobile Push Notification (for testing)](https://github.com/ce603/power-automate-push-notifications-for-events/blob/main/MobilePushNotification_20250529193714.zip)
 3. Ensure the actions are using the appropriate connections you created earlier.
